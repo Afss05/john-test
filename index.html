@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--====== Fontaswom Icon ======-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--====== Title ======-->
+  <title>JohnForTreasurer</title>
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/svg" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <style>
+    .about-area,
+    .about-five {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important
+    }
+  </style>
+  <style>
+    .imgcontainer {
+      max-width: 98%;
+      margin: auto;
+      padding: 4px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-sizing: border-box;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .text-center {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .lightbox-gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .lightbox-gallery div>img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .lightbox-gallery div {
+      margin: 10px;
+      flex-basis: 180px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .lightbox>div {
+        margin-bottom: 10px;
+      }
+    }
+
+    /*Lighbox CSS*/
+
+    .lightbox {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      padding-top: 30px;
+      box-sizing: border-box;
+    }
+
+    .lightbox img {
+      display: block;
+      margin: auto;
+    }
+
+    .lightbox .caption {
+      margin: 15px auto;
+      width: 50%;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1.5;
+      font-weight: 700;
+      color: #eee;
+    }
+
+    .github-link {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .github-link:hover,
+    .github-link:active,
+    .github-link:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li.lists:before {
+      content: '✓';
+      /* color: blue; */
+    }
+
+    ul li.list:before {
+      content: '✓';
+      color: blue;
+    }
+
+    .sang_pani {
+      color: black !important;
+      text-align: justify;
+    }
+
+    .sang_pani .list {
+      color: black !important;
+    }
+
+    .gallery_img img {
+      border-radius: 10px;
+    }
+
+    .nav-item a img {
+      width: 40px !important;
+    }
+
+    /* .active {
+      color: yellow ;
+    } */
+
+    #navbar .nav-item .page-scroll.light {
+            color: yellow !important;
+        }
+
+        /* #navbar .nav-item .active:hover {
+            color: yellow !important;
+        } */
+
+    
+  </style>
+</head>
+
+
+<body>
+
+ 
+
+  <!-- <script>
+    $(".navbar .nav-link").on("click", function(){
+   $(".navbar").find(".active").removeClass("active");
+   $(this).addClass("active");
+});
+  </script> -->
+
+  <!-- <script>
+    document.getElementById('toggleClassBtn').onclick = function() {
+        document.getElementById('text').classList.toggle('.active');
+    };
+</script> -->
+
+
+  <!--====== NAVBAR NINE PART START ======-->
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto" id="navbar">
+                <li class="nav-item">
+                  <a class="page-scroll light" href="#hero-area"><b>அறிமுகம்</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll " href="#services"><b>சங்கப் பணிகள்</b></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="page-scroll " href="#pricing"><b>சமூகப் பணிகள்</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll " href="#contact"><b>செய்ய விரும்பும் பணிகள்</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll " href="#Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll " href="#Endorsement">Endorsement</a>
+                </li>
+                <li class="nav-item"> 
+                  <!--a class="page-scroll active" href="#">Video</a-->
+                  <a class="page-scroll " href="#" onclick="openPopup()"><img src="assets/images/youtube-logo-red-hd-13.png" alt="" srcset=""></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-btn d-none d-lg-inline-block">
+              <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
+
+  <!--====== SIDEBAR PART START ======-->
+
+  <div class="sidebar-left">
+    <div class="sidebar-close">
+      <a class="close" href="#close"><i class="lni lni-close"></i></a>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-logo">
+        <a href="index.html"><img src="assets/images/white-logo_black.jpg" alt="Logo" /></a>
+      </div>
+      <p class="text"> FeTNA 2024 - Treasurer Candidate
+      </p>
+      <!-- logo -->
+      <div class="sidebar-menu">
+        <h5 class="menu-title">Quick Links</h5>
+        <ul>
+          <li><a class="page-scroll active" href="#hero-area">அறிமுகம்</a></li>
+          <li><a class="page-scroll" href="#services">சங்கப் பணிகள்</a></li>
+          <li><a class="page-scroll" href="#pricing">சமூகப் பணிகள்</a></li>
+          <li><a class="page-scroll" href="#contact">செய்ய விரும்பும் பணிகள்</a></li>
+          <li><a class="page-scroll" href="#Gallery">Gallery</a></li>
+          <li><a class="page-scroll" href="#Endorsement">Endorsement</a></li>
+          <li><a class="page-scroll" href="#Video"><img src="/assets/images/youtube-logo-red-hd-13.png" alt="" srcset="" width="30px"></a></li>
+        </ul>
+      </div>
+      <!-- menu -->
+    </div>
+    <!-- content -->
+  </div>
+  <div class="overlay-left"></div>
+
+  <!--====== SIDEBAR PART ENDS ======-->
+
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container" style="border: 1px solid white;  border-radius: 20px;">
+      <div class="row align-items-center ">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="assets/images/header/hero-image.png" alt="JOHN" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>மதிப்பிற்குரிய பேராளர்கள் மற்றும் வாழ்நாள் உறுப்பினர்களுக்கு அன்பு வணக்கம்,</h1>
+            <p style="text-align:justify">
+              என் பெயர் ஜான் பிரிட்டோ, வட அமெரிக்கத் தமிழ்ச் சங்கப் பேரவையின் 2024 தேர்தலில் பொருளாளர்(Treasurer) பொறுப்பிற்க்காக விண்ணப்பித்துள்ளேன். நான் பிறந்தது வளர்ந்தது மலைகோட்டை மாநகர் திருச்சியில், படித்தது முதுகலைப் பட்டம் (Master’s in Computer
+              Application),வசிப்பது கலிபோர்னியா தலைநகர் சாக்ரமெண்டோவில், பணி செய்வது சட்ட அமலாக்கம் தொடர்பான அரசு
+              நிறுவனத்தில் மென்பொருள் பிரிவில் மேற்பார்வையாளராக. தற்போது வட அமெரிக்கத் தமிழ்ச் சங்கப் பேரவையின்
+              இயக்குநராக கடந்த இரண்டு ஆண்டுகளாக பணியாற்றி வருகிறேன்.
+            </p> <br>
+            <p style="margin-top:2px; text-align: justify">கீழே குறிப்பிட்டுள்ள பல்வேறு பொறுப்புகளின் மூலம் எனக்கு கிடைத்த அனுபவத்தின் வாயிலாக அனைவரையும் அரவணைத்து பேரவையின் பொருளாளராக எவ்வித சார்பும் இன்றி பேரவை
+              விதிகளுக்கு உட்பட்டு சிறப்பாக செயல்படுவேன் என்று உளமாற உறுதி கூறி, உங்களின் பேராதரவை தந்து
+              வாக்களித்திடுமாறு பணிவோடு வேண்டுகிறேன்.</p> <br>
+            <ul class="listed">
+              <li class="lists">சாக்ரமெண்டோவில் நடைபெற்ற 36 ஆவது பேரவை விழா ஒருங்கிணைப்பாளர்</li>
+              <li class="lists">இரண்டு வருட சாக்ரமெண்டோ தமிழ் மன்றத் தலைவர் பொறுப்பு (2021 - 2023)</li>
+              <li class="lists">இரண்டு வருட சாக்ரமெண்டோ தமிழ் மன்றச் செயலாளர் பொறுப்பு(2019 - 2021) </li>
+              <li class="lists">ஒரு வருடத்திற்கு மேலாக பேரவை பொருளாளருடன் இணைந்து 36ஆவது விழாவிற்கான வரவு/செலவுகளை சரிபார்க்கும் பணி...</li>
+              <li class="lists">ஆறு வருட சாக்ரமெண்டோ தமிழ்ச் சங்க இயக்குநர் பொறுப்பு</li>
+              <li class="lists">15 வருட தன்னார்வலர் பணி</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+
+  <!--====== ABOUT FIVE PART START ======-->
+
+  <!-- <section class="about-area about-five" style="padding-top:20px; padding-bottom: 20px;">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-12 col-12">
+          <div class="about-five-content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section> -->
+
+  <!--====== ABOUT FIVE PART ENDS ======-->
+
+  <!-- ===== service-area start ===== -->
+  <section id="services" class="services-area services-eight" style="margin-top: 50px;">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6 class="text-center">சங்கப் பணிகள்</h6>
+              <h2 class="fw-bold" style=" text-align: center;">வடஅமெரிக்கத் தமிழ்ச் சங்கப் பேரவையில் வெற்றிகரமாக செய்து
+                முடித்த பணிகள்:</h2>
+              <p>
+              <ul class="listed sang_pani">
+                <li class="list">பேரவையின் 36 ஆவது பேரவை விழாவின்(<b>FeTNA 36th Convention</b>) ஒருங்கிணைப்பாளராக(<b>Convention Coordinator</b>) விழாவை வரவுக்குள் நடத்தி ஐந்து இலக்க உபரியுடன்(surplus) வெற்றிகரமாக நடத்தியது(<b>Under budget with surplus</b>).</li>
+                <li class="list">பேரவை வரலாற்றில் முதன் முறையாக 36ஆவது விழாவின் ஒரு அங்கமாக <b>தமிழ் தொழில் முனைவோர் மாநாட்டை சென்னையில்</b> 1000க்கும் மேற்பட்ட பங்கேற்பாளர்களுடன் வெற்றிகரமாக நடத்தியது.</li>
+                <li class="list">பேரவை விழாவிற்காக <b>$1+ மில்லியன் நிதி திரட்டியது</b>(தற்போது தணிக்கையில் உள்ளது.)</li>
+                <li class="list">பேரவை விழா வரலாற்றில் முதல் முறையாக தமிழ்நாடு அரசு இயல், இசை, நாடக மன்றத்தின் வழியாக தமிழ்நாட்டில் இருந்து <b>12 மரபுக்கலைஞர்களை </b> அழைத்து வந்து பேரவை விழாவில் பங்கேற்க செய்தது.</li>
+                <li class="list">பிரமாண்டமான விழா அரங்கம், 100 வகையான உணவு வகைகள், மரபுக் கலைஞர்கள், இலக்கியவாதிகள், தமிழிசை, திரையிசை மற்றும் மாற்று திறனாளிகள் பங்கற்ற சிறப்பு நிகழ்வுகள் என்று சிறப்பான நிகழ்வுகளை ஏற்பாடு செய்தது.</li>
+                <li class="list">பேரவை விழா மூலம் வரும் உபரியிலிருந்து(surplus) <b>20 சதவிதத்தை </b> கோவிட் பேரிடரில் பெற்றோரை இழந்த குழந்தைகளின் கல்விக்கு உதவிடும் நோக்கில் பேரவையுடன் ஒப்பந்தம் செய்தது.</li>
+                <li class="list">36 ஆவது விழாவின் ஒருங்கிணைப்பாளராக ஒரு வருடத்திற்கு மேலாக <b>40 விழா குழுக்கள், 300 தன்னார்வலர்களை </b> சிறப்பாக வழி நடத்தியது.</li>
+                <li class="list">உறுப்பினர், சிறப்புத் திறன் குழந்தைகள் குழு(2020 - 2024).</li>
+                <li class="list">உறுப்பினர், பேரவை விழா நிகழ்த்துக் குழு(2022 & 2024)</li>
+                <li class="list"> இணை ஒருங்கிணைப்பாளர், பேரவை விழா தமிழ்ச் சங்கங்களின் சங்கமம் குழு(2022).</li>
+                <li class="list">உறுப்பினர், பேரவை விழா தொழில் முனைவோர் மாநாட்டு குழு(2022).</li>
+                <li class="list">ஒருங்கிணைப்பாளர் பேரவை சங்கங்களின் சங்கமம் குழு(2022-2024) </li>
+              </ul>
+              <p class="heading-3" style="margin-right:15px;margin-bottom:15px;margin-left:15px">சாக்ரமெண்டோ தலைவர்
+                (2021 - 2023) மற்றும் செயலாளர்(2019-2021) பொறுப்பில் இருந்து போது செய்த பணிகள்:</p>
+              <ul class="listed sang_pani">
+                <li class="list">வடஅமெரிக்கத் பேரவை விழா 2023 சாக்ரமெண்டோவில் நடத்தும் பெரும் வாயப்பை பெற்று வந்தது.
+                </li>
+                <li class="list">சாக்ரமெண்டோ தமிழ் மன்றத்தின் <b>25 வது ஆண்டு வெள்ளி விழாவை</b> மன்றத்தின் தலைவர் பொறுப்பிலிருந்து அனைவரையும் ஒருங்கிணைத்து சிறப்பாக நடத்தியது.</li>
+                <li class="list">தை மாதத்தை தமிழ் மரபுத் திங்கள்(<b>Tamil Heritage Month</b>) என்று சாக்ரமெண்டோவின் நான்கு நகரங்களால் அறிவிக்கச் செய்தது.</li>
+                <li class="list">மன்றத்தில் இளையோரின் பங்கை அதிகரித்திட இளைஞர் மன்றத்தை உருவாக்கியது.</li>
+                <li class="list">பைந்தமிழ் வாசகர் வட்டத்தை உருவாக்கி மாதந்தோறும் இலக்கிய கூட்டம் நடத்தியது மற்றும் வளர்ந்து வரும் எழுத்தாளர்களை ஊக்குவித்தது.</li>
+                <li class="list">இலங்கை தமிழ் உறவுகளின் நீண்ட நாள் வேண்டுகோளை ஏற்று தமிழீழத்தில் அரங்கேறிய தமிழருக்கு எதிரான இனப்படுகொலையை கண்டித்து தனித்தீர்மானத்தை மன்றத்தின் 25 ஆவது ஆண்டு விழாவில் நிறைவேற்றியது.</li>
+                <li class="list">மாணவர்கள், பெண்களின் தனித்திறனை வெளிக்கொண்டு வருவதற்காக பூங்கனி மின்னிதழை அறிமுகப்படுத்தியது.</li>
+                <li class="list">மாணவர்களின் பேச்சுதிறனை மேம்படுத்திட கோடைகால பயிற்சி பட்டறை அறிமுகப்படுத்தியது.</li>
+                <li class="list">பேரிடர் மற்றும் கோவிட் தொற்று காலத்தில் தமிழகம் மற்றும் இலங்கையில் உள்ள தமிழ் சொந்தங்களுக்கு உதவிட பல்வேறு நிகழ்வுகளை நடத்தி உதவியது.</li>
+              </ul>
+              </p>
+              <div class="row about-area about-five">
+                <div class="col-12">
+                  <hr class="bg-primary" style="height:10px;">
+                </div>
+              </div>
+
+              <!-- Start Pricing  Area -->
+              <section id="pricing" class="pricing-area pricing-fourteen">
+                <!--======  Start Section Title Five ======-->
+                <div class="section-title-five" style="margin-top: -100px;">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="content">
+                          <h6 class="text-center">சமூகப் பணிகள்</h6>
+                          <p class="heading-2"
+                            style="margin-top:15px;margin-right:15px;margin-bottom:15px;margin-left:15px">
+                          <h2>தன்னார்வலராக ஆற்றிய சமூகப் பணிகள்</h2>
+                          </p>
+                          <ul class="listed sang_pani">
+                            <li class="list">ஹார்வர்டு பல்கலைக்கழக தமிழ் இருக்கைக்காக 50,000 வெள்ளி நிதி திரட்டியது.
+                            </li>
+                            <li class="list">ஏறு தழுவுதல் உரிமைக்கான போராட்டங்களில் முன்னின்று நடத்தியது.</li>
+                            <li class="list">பேரிடர் மற்றும் பெருந்தொற்று காலங்களில் நிதி திரட்டியது.</li>
+                            <li class="list">ஈழத்துத் தமிழ்ச் சொந்தங்களின் உரிமைக்காக துணை நின்றது.</li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- row -->
+                  </div>
+                  <!-- container -->
+                </div>
+                <div class="row about-area about-five">
+                  <div class="col-12">
+                    <hr class="bg-primary" style="height:10px;">
+                  </div>
+                </div>
+              </section>
+
+              <!-- ========================= contact-section start ========================= -->
+              <section id="contact" class="contact-section">
+                <div class="container" >
+                  <div class="row">
+                    <div class="col-12 seiyum">
+                      <div class="content">
+                        <h6 class="text-center seiyum">செய்ய விரும்பும் பணிகள்</h6>
+                        <p class="heading-2"
+                          style="margin-top:15px;margin-right:15px;margin-bottom:15px;margin-left:15px">
+                        <h2>வடஅமெரிக்கத் தமிழ்ச் சங்கப் பேரவை பொருளாளராக நான் செய்ய விரும்பும் பணிகள்</h2>
+                        </p>
+                        <ul class="listed sang_pani">
+                          <li class="list">பேரவை வரவு/செலவு கணக்குகளில் வெளிப்படைத்தன்மை(<b>Transparency</b>) உறுதி
+                            செய்யப்படும். ஆறு மாதத்திற்கு ஒரு முறை பேரவையின் வரவு செலவு உள்ளடக்கிய நிதி நிலை அறிக்கை
+                            பேராளர்கள் மற்றும் வாழ்நாள் உறுப்பினர்களுடன் பகிரப்படும்.</li>
+                          <li class="list">பேரவை பணிகள் இயக்கச் செலவுகள் (<b>Operational cost</b>) மற்றும் தொண்டுச்
+                            செலவுகள்(<b>Charitable costs</b>) என்று நிதிகள் ஒதுக்கப்பட்டு அது முறைப்படி செலவிடப்படுகிறது என்பது
+                            உறுதிபடுத்தப்படும்.</li>
+                          <li class="list">பேரவை இயக்கச் செலவுகளுக்கான நிதி்(<b>Operational Cost</b>), பேரவை விழாவின்
+                            உபரி(<b>Surplus from Convention</b>) நிதியை சார்ந்திராமல் இருக்க புதிய திட்டங்கள் உருவாக்கப்படும்.
+                          </li>
+                          <li class="list">இருமொழி முத்திரை(<b>Bilingual Seal</b>) பெற்ற மாணவர்கள் மற்றும் வணக்கம் வட அமெரிக்க
+                            போட்டிகளில் வெற்றி பெற்ற மாணவர்களுக்கும் கல்லூரி உதவித்தொகை(<b>Scholarship</b>) வழங்கிட முயற்சிகள்
+                            மேற்கொள்ளப்படும்.</li>
+                          <li class="list">பேரவையின் நிதி நிலையை மேம்படுத்திடும் புதிய திட்டங்கள் வகுக்கப்படும்.</li>
+                          <li class="list">தமிழ் நாட்டிலோ அல்லது ஈழத்திலோ நிதி உதவிகள் தேவைப்படும் போது அதற்கான நிதி
+                            திரட்டும் திட்டங்களும் முன்னெடுக்கப்படும்.</li>
+                          <li class="list">பேரவை நிதியை முதலீடு செய்ய பொருளாதார நிபுணர்கள் கொண்ட வழிகாட்டுதல் குழு
+                            அமைக்கப்படும்.</li>
+                          <li class="list">தமிழ்ச் சங்கங்கள் புதுப்பித்தல் மற்றும் அனைத்து கட்டணங்கள் செலுத்தும்
+                            முறையில் தானியக்க செயல்முறை(<b>Automated Process</b>) கொண்டு வரப்படும்.</li>
+                          <li class="list">பெறப்படும் நிதிகளுக்கு உடனடியாக                   ஒப்புகை(<b>Acknowledgement</b>) ரசீது வழங்கப்படும்.</li>
+                          <li class="list">கேள்விகள்/உதவிகளுக்கு 24 மணி நேரத்தில் பதில் வழங்கப்படும்.</li>
+                          <li class="list">பேரவை நிதியை முறையாக பயன்படுத்திடும் நோக்கில் நிதி மேலாண்மை திட்டங்கள்
+                            வகுக்கப்பட்டு பொதுக் குழு ஒப்புதலுடன் நிறைவேற்றிட முயற்சிகள் மேற்கொள்ளப்படும்.</li>
+                          <li class="list">உறுப்பினர்களுக்கும், சங்கங்களுக்கும் பயனளிக்கும் வகையில் நிதி மேலாண்மை, உயில்
+                            மற்றும் அறக்கட்டளை குறித்த விழிப்புணர்வு கூட்டங்கள், வெளிநாட்டில் வசிக்கும் தமிழர்கள்
+                            தாய்நாட்டில் இருக்கும் சொத்துக்களை திறம்பட நிர்வகிக்கவும் உரிய ஆலோசனை வழங்கவும் சிறப்புக்
+                            கூட்டங்கள் ஏற்பாடு செய்து நடத்தப்படும்.</li>
+                          <li class="list">பேரவை சார்பாக நடைபெறும் விழாக்கள் மற்றும் போட்டிகளில் அனைத்து தமிழ்ச்
+                            சங்கங்கள் மற்றும் பள்ளிகளுக்கு சமமான வாய்ப்பை பெற்றிடவும் மற்றும் பங்களிப்பை அதிகரித்திடவும்
+                            தேவையான முயற்சிகளை மேற்கொள்வது.</li>
+                            <li class="list">பேரவையின் சார்பாக தமிழ் இணைய நூலகம்(<b>eLibrary</b>) அமைத்திட முயற்சி எடுப்பது.</li>
+                        </ul>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="heading-2" style="margin-top:15px;margin-right:15px;margin-bottom:15px;margin-left:15px">
+                <h4>நன்றி வணக்கம் - ஜான் பிரிட்டோ<h4>
+                    </p>
+                    <div class="row about-area about-five">
+                      <div class="col-12">
+                        <hr class="bg-primary" style="height:10px;">
+                      </div>
+
+
+              </section>
+
+              <section id="Gallery" class="contact-section">
+                <h6 class="text-center">Gallery</h6>
+                <div id="ImageScrolling">
+                  <div class="container imgcontainer mb-2">
+                    <div class="row">
+
+                      <div class="lightbox-gallery mt-5 gallery_img">
+
+                        <div><img src="assets/images/gallery/1.jpg" data-image-hd="assets/images/gallery/1_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/2.jpg" data-image-hd="assets/images/gallery/2_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/3.jpg" data-image-hd="assets/images/gallery/3_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/4.jpg" data-image-hd="assets/images/gallery/4_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/5.jpg" data-image-hd="assets/images/gallery/5_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/6.jpg" data-image-hd="assets/images/gallery/6_b.jpeg">
+                        </div>
+                          <div><img src="assets/images/gallery/7.jpg" data-image-hd="assets/images/gallery/7_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/8.jpg" data-image-hd="assets/images/gallery/8_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/9.jpg" data-image-hd="assets/images/gallery/9_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/10.jpg" data-image-hd="assets/images/gallery/10_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/11.jpg" data-image-hd="assets/images/gallery/11_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/12.jpg" data-image-hd="assets/images/gallery/12_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/13.jpg" data-image-hd="assets/images/gallery/13_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/14.jpg" data-image-hd="assets/images/gallery/14_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/15.jpg" data-image-hd="assets/images/gallery/15_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/16.jpg" data-image-hd="assets/images/gallery/16_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/17.jpg" data-image-hd="assets/images/gallery/17_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/18.jpg" data-image-hd="assets/images/gallery/18_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/19.jpg" data-image-hd="assets/images/gallery/19_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/20.jpg" data-image-hd="assets/images/gallery/20_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/21.jpg" data-image-hd="assets/images/gallery/21_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/22.jpg" data-image-hd="assets/images/gallery/22_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/24.jpg" data-image-hd="assets/images/gallery/24_b.jpeg">
+                        </div>
+                        <div><img src="assets/images/gallery/25.jpg" data-image-hd="assets/images/gallery/25_b.jpg">
+                        </div>
+                     <div><img src="assets/images/gallery/26.jpeg" data-image-hd="assets/images/gallery/26_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/27.jpeg" data-image-hd="assets/images/gallery/27_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/28.jpeg" data-image-hd="assets/images/gallery/28_b.jpg">
+                        </div>
+                        <div><img src="assets/images/gallery/29.jpeg" data-image-hd="assets/images/gallery/29_b.jpg">
+                        </div>
+                          <div><img src="assets/images/gallery/31.jpeg" data-image-hd="assets/images/gallery/31_b.jpg">
+                        </div>
+                        <!-- <div><img src="assets/images/gallery/31.jpg" data-image-hd="assets/images/gallery/31_b.jpg"> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row about-area about-five">
+                  <div class="col-12 mb-sm-4">
+                    <hr class="bg-primary" style="height:10px;">
+                  </div>
+                  <section id="Endorsement" class="contact-section">
+                    <h6 class="text-center">Endorsement</h6>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <div class="card" style="margin-left: 40px; margin-right: 40px; padding: 10px;"> -->
+                          <div class="card">
+                            <div class="card-body d-lg-flex">
+                              <!-- <div class="col-4" style="margin-top: 20px;margin-right: 0px;padding: 20px;padding: 20px; "> -->
+                              <div class="col-4 mt-2">
+                                <img src="assets/images/about/about-img2.jpeg" width="60%" height="200px">
+                                <p style="text-align:center; font-size: 14px;">
+                                  <b style="font-size: 18px;">முனைவர். அரசு செல்லையா</b><br>
+                                  பேரவை மேனாள் தலைவர் (1998)<br>
+                                  பேரவை 11ம் ஆண்டுவிழா ஒருங்கிணைப்பாளர்<br>
+                                  பேரவை வாழ்நாள் உறுப்பினர்
+                                </p>
+                              </div>
+                              <div class="col-8">
+                                <!-- <h4>அனைவருக்கும் வணக்கம்</h4> -->
+                                <p style="text-align: justify; padding: 10px;">அனைவருக்கும் வணக்கம்,<br>பேரவைத்
+                                  தேர்தலில் பொருளாளர்
+                                  பொறுப்பிற்கு விண்ணப்பித்திற்கு இருக்கும் ஜான் பிரிட்டோ கடந்த சில ஆண்டுகளாக எனக்கு
+                                  நன்கு அறிமுகமானவர். அவருடன் சாக்ரமண்டோவில் நடந்த 36 ஆவது பேரவை விழாவின் நிகழ்ச்சிக்
+                                  குழுவில் நான் இணைந்து பணியாற்றி இருக்கிறேன். இனியவர். பொறுமை நிறைந்தவர்.
+                                  தனக்கு கொடுத்த பணியை கடின உழைப்பால் சிறப்பாக நடத்தி முடிக்கும் செயல் திறமை மிக்கவர்.
+                                  சாக்ரமெண்டோவில் நடைபெற்ற 36 ஆவது பேரவை விழாவின் ஒருங்கிணைப்பாளராக இருந்து விழாவை
+                                  சிறப்பாக நடத்தியதில் ஜான் அவர்களின் கடின உழைப்பு அளப்பரியது. எப்போது அலைபேசியில் பேரவை
+                                  சார்ந்த பணிகளுக்கு அழைத்தாலும் உடனே பேசி ஆவன செய்தவர். மிகவும் நிதானமாக, எவ்வித
+                                  சார்புமின்றி, எதிர்பார்ப்புமின்றி பணியாற்றக் கூடிய சிறந்த தன்னார்வலர். இவரைப் போன்ற
+                                  தொண்டுள்ளம் கொண்ட, நிதானமான, பிறருடன் இணைந்து ஒற்றுமையாய் பணியாற்றவல்ல தன்னார்வலர்கள்
+                                  பேரவை நிர்வாக க்குழுவில் இடம் பெறுவது, பேரவை வளர்ச்சிக்கு அவசியம் தேவை.</p>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div> <br>
+                        
+                        <div class="row">
+                        <div class="col-12">
+                          <!-- <div class="card" style="margin-left: 40px; margin-right: 40px; padding: 10px;"> -->
+                          <div class="card">
+                            <div class="card-body d-lg-flex">
+                              <!-- <div class="col-4" style="margin-top: 20px;margin-right: 0px;padding: 20px;padding: 20px; "> -->
+                              <div class="col-4 mt-2">
+                                <img src="assets/images/about/about-img4.jpeg" width="60%" height="200px">
+                                <p style="text-align:center; font-size: 14px;">
+                                  <b style="font-size: 18px;">மலர் அகிலன்</b><br>
+                                   36வது பேரவை விழா<br>
+                                   இணை ஒருங்கிணைப்பாளர்
+                                </p>
+                              </div>
+                              <div class="col-8">
+                                <!-- <h4>அனைவருக்கும் வணக்கம்</h4> -->
+                                <p style="text-align: justify; padding: 10px; overflow-y: scroll; overflow-x: hidden; height: 400px;">அனைவருக்கும் வணக்கம்,<br>36வது பேரவை விழாவின் ஒருங்கிணைப்பாளர் பொறுப்பில் இருந்தவர் திரு. ஜான் பிரிட்டோ. அவர் தமிழில் கொண்ட பற்றினாலும் மக்களின் மீது கொண்ட அக்கறையினாலும்  தமிழ் மொழி சார்ந்த பல நிகழ்ச்சிகளில் ஒரு தன்னார்வலர்களாக பங்கேற்றுள்ளார். சாக்ரமெண்டோ தமிழ் மன்றத்தின் தலைவர் பொறுப்பில் இரண்டு ஆண்டுகள் வகித்துள்ளார்.
+அவரது தன்னார்வளராக தொண்டாற்றிய நீண்ட அனுபவத்தை,  சுய விருப்பு வெறுப்புகளுக்கு அப்பாற்பட்டு, எடுத்த விடயம் பொருட்டு சிரத்தையுடன் செயலாற்றும் பாணியில் வெளிப்டையாகத் தெரிந்து கொள்ளமுடியும். ஒரு சிறிய தமிழ் மன்றம் 36வது பேரவை விழாவை, திறம்படச் செய்ததென்றால், அதில்  திரு ஜானின் பங்கு அளப்பெரியது. அவருடன் இணை ஒருங்கிணைப்பாளராக சேர்ந்து பணியாற்றியதில் பொறுமையுடனும் நிதானத்துடனும் ஒரு பிரச்சனையைக் கையாளுதல், யார் யாரிடம் எவ் வேலையைக் கொடுத்தால் அது எவ்விதம் நிறைவேறும் எனத் திறன் ஆராய்தல், மனித பலத்தை எப்படித் திரட்டுவது, திரட்டிய பலத்தை எப்படி வலுப்படுத்துவது என்ற யுக்திகள், செய்பவற்றை திருந்தச் செய்யும் நேர்த்தி, விடயங்களை முக்கியத்துவப்படுத்தல், கண்காணிப்புடனும் நம்பிக்கையுடனும் செயற்படல், சந்தர்ப்ப சூழ்நிலைகளுக்கு ஏற்ற தனது கருத்துக்களை ஆக்கபூர்வமான முறையில் வெளிப்படுத்தல், நேரம் காலம் பாராமல் சுயநலமற்று அர்ப்பணிப்புடன் வேலை செய்தல் மற்றும் கருத்து வேறுபாடுகளைக் கையாளும் சிறந்த விதம்  அவரிடம் அவதானித்த விடயங்கள்.
+தன்னுடன் சேர்ந்து தன்னார்வலர்களாகப் பணியாற்றும் சக மனிதர்களை மரியாதையுடன் நடத்துதல், அவர்களின் கருத்துக்களுக்கும் யோசனைகளும் சந்தர்ப்பம் கொடுத்தல், அவர்கள் கூறும் கருத்துக்களைக் கூர்ந்து கவனித்தல், மற்றும் பொதுக் கருத்துக்கு ஒப்புதல் வாங்குதல் போன்ற விடயங்கள் அவருடன் வேலை செய்பவர்களுக்கு ஒரு இனிமையான அனுபவத்தை கொடுக்கக் கூடியவை. இவர் எடுக்கும் முயற்சிகள் வெற்றியளிக்க எனது வாழ்த்துக்கள்.
+</p>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div> <br>
+                        <div class="row">
+                        <div class="col-12">
+                          <!-- <div class="card" style="margin-left: 40px; margin-right: 40px; padding: 10px;"> -->
+                          <div class="card">
+                            <div class="card-body d-lg-flex">
+                              <!-- <div class="col-4" style="margin-top: 20px;margin-right: 0px;padding: 20px;padding: 20px; "> -->
+                              <div class="col-4 mt-2">
+                                <img src="assets/images/about/about-img3.jpeg" width="60%" height="200px">
+                                <p style="text-align:center; font-size: 14px;">
+                                  <b style="font-size: 18px;">Yamini Karunakaran</b><br>
+                                  President<br>
+                                   - Sacramento Tamil Mandrum<br>
+                                  USA
+                                </p>
+                              </div>
+                              <div class="col-8">
+                                <!-- <h4>அனைவருக்கும் வணக்கம்</h4> -->
+   <p style="text-align: justify; padding: 10px; overflow-y: scroll; overflow-x: hidden; height: 400px;">Hi all, <br> John Britto during his tenure as the president of Sacramento Tamil Mandrum (STM), despite the covid restrictions and challenges he stayed committed to serving the Sacramento Tamil Community and did all the basis to secure the opportunity to host the Fetna Convention in Sacramento, California. Sacramento Tamil community is relatively small both in terms of population and economic might. To host an event like Fetna Convention, it required John to be more creative in fund raising and logistics efforts and involving more than just the Sacramento Tamil community and bringing folks from west coast in general. He rallied the troops and organized fund raisers, logistics and delivered a successful 36th  Fetna convention in 2023.
+
+Having closely working with John on the STM board in various capacities I have been inspired by his leadership, selflessness, and commitment. Regardless of the size of event, there is consistent effort and dedication from John to ensure that the event is successful. He not only puts in his personal effort, but he also makes the entire team work towards the singular cause by leading from the front. John has been actively involved in the STM activities even after his presidential tenure.
+
+He is dedicated person to furthering the cause of Tamil people not just in Sacramento but in entire North America. I strongly believe that he deserves the opportunity to serve the Northern American Tamil community. Based on my past interactions with him I have no doubt that he would be the perfect candidate for the treasure position.</p>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                        <br>
+                        
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <div class="card" style="margin-left: 40px; margin-right: 40px; padding: 10px;"> -->
+                          <div class="card">
+                            <div class="card-body d-lg-flex">
+                              <!-- <div class="col-4" style="margin-top: 20px;margin-right: 0px;padding: 20px;padding: 20px; "> -->
+                              <div class="col-4 mt-2">
+                                <img src="assets/images/about/john.jpg" width="60%" height="200px">
+                                <p style="text-align:center; font-size: 14px;">
+                                  <b style="font-size: 18px;">கணபதி முருகேஷ்</b><br>
+                                  நிறுவனர் மற்றும் அறங்காவலர்<br>
+                                  சாக்ரமெண்டோ தமிழ் மன்றம்<br>
+                                  
+                                </p>
+                              </div>
+                              <div class="col-8">
+                                <!-- <h4>அனைவருக்கும் வணக்கம்</h4> -->
+                                <p style="text-align: justify; padding: 10px; overflow-y: scroll; overflow-x: hidden; height: 400px;">Vanakkam, <br> It is with great pride and unwavering support that I, Ganapathy Murugesh, founder and trustee of The Sacramento Tamil Mandrum (STM), wholeheartedly endorse John Britto for the position of Treasurer in the Federation of Tamil Sangams of North America (FeTNA). John Britto’s extensive experience, steadfast dedication, and unparalleled leadership make him an exemplary candidate for this vital role within FeTNA.
+                                  John Britto has been a cornerstone of the Sacramento Tamil Mandrum since 2018, bringing his leadership, passion, integrity, and meticulous attention to detail to every endeavor. As a former President and current Board Director of STM, John has consistently demonstrated his commitment to the Tamil community through his tireless efforts to promote Tamil culture, language, and heritage. His tenure on the Board of Sacramento Tamil Mandrum has been marked by a series of successful initiatives and events that have significantly enriched our community.
+                                  One of John’s most notable achievements was his role as the coordinator for the Federation of Tamil Sangams of North America (FeTNA) 36th convention held in Sacramento during July 2023. Under John's leadership, the convention emerged as one of the most successful in FeTNA's history. The event was a massive undertaking, involving over 350 local volunteers from Sacramento and more than 100 volunteers globally. John’s ability to lead such a diverse and large team with calm demeanor and meticulous planning was nothing short of remarkable. The convention attracted over 2,700 attendees from around the world, all of whom were profoundly impressed by the organization and execution of the event.
+                                  John’s exemplary leadership during the convention showcased his exceptional skills in coordination, collaboration, and crisis management. His meticulous approach to planning and execution ensured that every aspect of the event was handled with precision and care. Whether it was logistics, programming, or volunteer management, John’s attention to detail and proactive problem-solving were evident in every decision he made. His calm demeanor, even in the face of unexpected challenges, inspired confidence and trust among volunteers and attendees alike.
+                                  John’s commitment to teamwork and his ability to foster a collaborative environment were key factors in the success of the convention. He has a unique talent for bringing people together, leveraging their strengths, and guiding them towards a common goal. His team player attitude and selfless personality were evident as he worked tirelessly, often around the clock, to ensure that the convention ran smoothly and successfully. John’s dedication to the success of the event was unwavering, and his ability to inspire and motivate others was a testament to his leadership skills.
+                                  Throughout his career, I have had the privilege of working with many leaders, but John Britto stands out and towers above the rest. Among the 20 plus STM Presidents and numerous leaders I have had the privilege to work with, John’s leadership qualities are unparalleled. His services to the North American Tamil community have been invaluable, with a global impact that extends far beyond the boundaries of any single event or organization. John’s vision, dedication, and tireless work ethic have significantly contributed to the growth and development of the Tamil community in North America.
+                                  John’s meticulous skills, combined with his calm demeanor, make him an ideal candidate for the role of Treasurer. He has a proven track record of managing complex projects and budgets with precision and transparency. His experience in leading large teams and organizing major events demonstrates his ability to handle the financial responsibilities and challenges that come with the Treasurer position. John’s commitment to excellence and his dedication to the Tamil community ensure that he will bring the same level of integrity, diligence, and professionalism to the role of Treasurer.
+                                  John Britto’s extensive experience, exceptional leadership skills, and unwavering commitment to the Tamil community make him the perfect candidate for the position of Treasurer in FeTNA. His ability to lead with empathy, collaborate effectively, and manage complex projects with meticulous attention to detail are qualities that will greatly benefit FeTNA. I have no doubt that John will excel in this role, bringing his unique blend of skills, experience, and dedication to support and enhance FeTNA’s mission. I wholeheartedly endorse John Britto for Treasurer and look forward to seeing the continued positive impact of his leadership on our community.
+                                  Ganapathy Murugesh
+                                  Founder and Trustee, Sacramento Tamil Mandrum
+                                  Founder and CEO, InfiniteGROUP
+                                  </p>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row about-area about-five">
+                      <div class="col-12">
+                        <hr class="bg-primary" style="height:10px;">
+                      </div>
+                    </div>
+                </div>
+              </section>
+              <!-- <div class="row about-area about-five">
+                <div class="col-12">
+                  <hr class="bg-primary" style="height:10px;">
+                </div>
+              </div> -->
+              <section id="Video" class="contact-section section-title-five">
+                <h6 class="text-center">Videos</h6>
+                <!-- <div class="" style="justify-content: center; display: flex; align-items: center;"> -->
+                  <div class="container">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <iframe  width="560" height="315"
+                          src="https://www.youtube.com/embed/Icogg8fCVDc?si=exDsWXjLP90K4Kh6" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe  width="560" height="315"
+                          src="https://www.youtube.com/embed/zrNcW8QBias?si=puf--9QIoq1AZ-3F" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                
+                  
+                </div>
+              </section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+
+                    <div class="row about-area about-five">
+                      <div class="col-12">
+                        <hr class="bg-primary" style="height:10px;">
+                      </div>
+                    </div>
+
+                    <p style="text-align:center;  margin-top:15px; margin-right:15px; margin-bottom:15px;margin-left:15px; font-size: 30px; text-decoration-color: darkblue"><b>
+                    தமிழால் இணைவோம்!! <br>தமிழைத் தரணிப் போற்றிடச் செய்திடுவோம்!!</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row about-area about-five">
+                  <div class="col-12">
+                    <hr class="bg-primary" style="height:10px;">
+                  </div>
+                </div>
+              </div>
+    </div>          <!-- <div class="row about-area about-five">
+                <div class="col-12">
+                  <hr class="bg-primary" style="height:10px;">
+                </div>
+              </div> -->
+  </section>
+
+
+
+
+
+
+
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!--====== js ======-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+
+  <script>
+
+    //===== close navbar-collapse when a  clicked
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
+
+    // ==== left sidebar toggle
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
+
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
+
+    // ===== navbar nine sideMenu
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
+
+    //========= glightbox
+    GLightbox({
+      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': true,
+    });
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Your jQuery code -->
+  <script>
+    // Create a lightbox
+    $(document).ready(function () {
+      var $lightbox = $("<div class='lightbox'></div>");
+      var $img = $("<img>");
+      var $caption = $("<p class='caption'></p>");
+
+      // Add image and caption to lightbox
+      $lightbox.append($img).append($caption);
+
+      // Add lighbox to document
+      $('#ImageScrolling').append($lightbox);
+
+      // Handle click event on gallery images
+      $('.lightbox-gallery img').click(function (e) {
+        e.preventDefault();
+
+        // Get image link and description
+        var src = $(this).attr("data-image-hd");
+        var cap = $(this).attr("alt");
+
+        // Add data to lighbox
+        $img.attr('src', src);
+        $caption.text(cap);
+
+        // Show lightbox
+        $lightbox.fadeIn('fast');
+      });
+
+      // Handle click event on lightbox to close it
+      $lightbox.click(function () {
+        $lightbox.fadeOut('fast');
+      });
+    });
+  </script>
+
+
+  <div id="overlay" class="overlay">
+    <button onclick="openPopup()"></button>
+    <div id="popup" class="popup">
+      <iframe id="videoFrame" width="560" height="315"
+        src="https://www.youtube.com/embed/AOvF4IW_E1E?si=8eIxT7XrJ64_Tgv9" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <button onclick="closePopup()" style="background: none; border: none; cursor: pointer;">
+        <img src="assets/images/close img.jpeg" alt="Close" width="35" height="35">
+      </button>
+
+    </div>
+  </div>
+
+  <script>
+    //var videoPlayer = document.getElementById('videoPlayer');
+    // Function to open the pop-up
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    // Function to close the pop-up
+    function closePopup() {
+      // Mute the video before closing
+      var videoFrame = document.getElementById("videoFrame");
+      videoFrame.contentWindow.postMessage('{"event":"command","func":"mute","args":""}', '*');
+      videoFrame.src = 'https://www.youtube.com/embed/AOvF4IW_E1E?si=8eIxT7XrJ64_Tgv9'; // Stop the video by resetting its source
+
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+
+    }
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) {
+      console.error("Navbar element not found");
+      return;
+    }
+
+    const navItems = navbar.getElementsByClassName("page-scroll");
+    if (navItems.length === 0) {
+      console.error("No nav-item elements found");
+      return;
+    }
+
+    for (let item of navItems) {
+      item.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log("Clicked:", this);
+
+        // Remove 'active' class from all items
+        for (let navItem of navItems) {
+          navItem.classList.remove("light");
+        }
+
+        // Add 'active' class to the clicked item
+        item.classList.add("light");
+
+      });
+    }
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
